@@ -1,0 +1,47 @@
+shuru {
+    Adad a = 10;
+    ChhotaAdad b = 20.5;
+    BaraAdad pi = 3.14159;
+    Harf grade = 'A';
+    Jumla name = "Ali";
+    Haqeeqat status = 1;
+    AdadiSilsila marks[5] = {90, 85, 78, 92, 88};
+
+    agar (a < b) {
+        likho "a is less than b";
+    } agarbhi (a == b) {
+        likho "a is equal to b";
+    } warna {
+        likho "a is greater than b";
+    }
+
+    dohrana (int i = 0; i < 5; i++) {
+        likho marks[i];
+        jari;
+    }
+
+    kaam sum(Adad x, Adad y) shuru {
+        wapas x + y;
+    khatam
+
+    Adad total = sum(a, 5);
+    likho total;
+
+    jab (grade) {
+        hal 'A': likho "Excellent"; rukjao;
+        hal 'B': likho "Good"; rukjao;
+        hal 'C': likho "Average"; rukjao;
+        hal 'D': likho "Poor"; rukjao;
+        hal default: likho "Invalid Grade";
+    }
+
+    Ishara Adad *ptr = &a;
+    likho *ptr;
+
+    Khazana Calculator;
+    Khaaka Point;
+
+    // Error test
+    likho @invalidToken;
+}
+

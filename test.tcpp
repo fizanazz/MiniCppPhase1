@@ -1,0 +1,39 @@
+shuru {
+    // Variable declarations
+    Adad a = 10;
+    ChhotaAdad b = 20.5;
+    BaraAdad pi = 3.14159;
+    Harf grade = 'A';
+    Jumla name = "Ali";
+    Haqeeqat status = 1;
+    AdadiSilsila marks[5] = {90, 85, 78, 92, 88};
+
+    // Conditional statements
+    agar (a < b) { likho "a is less than b"; }
+    agarbhi (a === b) { likho "a is equal to b"; }
+    warna { likho "a is greater than b"; }
+
+    // Loop
+    dohrana (int i = 0; i < 5; i++) {
+        likho "Mark: " + marks[i];
+    }
+
+    // Boolean operation
+    Haqeeqat result = status && 0;
+
+    // Using custom keywords
+    kaam sum(Adad x, Adad y) {
+        wapas x + y;
+    }
+
+    Adad total = sum(a, 5);
+
+    // Strings and characters
+    Jumla greeting = "Hello, World!";
+    Harf letter = 'Z';
+
+    // Invalid token to test error handling
+    @invalidToken = 100;
+}
+khatam
+
